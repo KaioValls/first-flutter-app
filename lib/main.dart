@@ -32,33 +32,11 @@ class MyApp extends StatelessWidget {
                 fontSize: 20,
               ),
             ),
-            MyCard(),
+            MyCard("+55 11 96766-0012",Icons.phone,),
             SizedBox(
               height: 30,
             ),
-            Card(
-              margin: EdgeInsets.only(left: 50.0, right: 50.0),
-              child: Padding(
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail,
-                      color: Colors.blue,
-                      size: 30,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text("verstappen@f1.com",
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20,
-                        ))
-                  ],
-                ),
-              ),
-            ),
+            MyCard("verstappen@f1.com", Icons.mail),
           ],
         ),
       ),
