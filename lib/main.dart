@@ -1,3 +1,4 @@
+import 'package:card_app/mycard.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,34 +32,11 @@ class MyApp extends StatelessWidget {
                 fontSize: 20,
               ),
             ),
-            Card(
-              margin: EdgeInsets.only(left: 50.0, right: 50.0, top:30),
-              child: Padding(
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.blue,
-                      size: 30,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text("+55 11 96766-0012",
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 20,
-                        ))
-                  ],
-                ),
-              ),
-            ),
+            MyCard(),
             SizedBox(
               height: 30,
             ),
-
-             Card(
+            Card(
               margin: EdgeInsets.only(left: 50.0, right: 50.0),
               child: Padding(
                 padding: EdgeInsets.all(10),
